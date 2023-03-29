@@ -1,8 +1,8 @@
-package com.dogukanincee.roomdatabasetemplate.dao;
+package com.dogukanincee.roomdatabasetemplate.dao
 
-import androidx.room.*;
-import com.dogukanincee.roomdatabasetemplate.data.User;
-import kotlinx.coroutines.flow.Flow;
+import androidx.room.*
+import com.dogukanincee.roomdatabasetemplate.data.User
+import kotlinx.coroutines.flow.Flow
 
 /**
  * Data access object (DAO) for User entity
@@ -16,7 +16,7 @@ interface UserDao {
      * @return Flow of List of User entities
      */
     @Query("SELECT * FROM users")
-    fun getAllUsers(): Flow<List<User>>;
+    fun getAllUsers(): Flow<List<User>>
 
     /**
      * Retrieves a user from the database by their ID
@@ -25,7 +25,7 @@ interface UserDao {
      * @return the User entity or null if not found
      */
     @Query("SELECT * FROM users WHERE id = :id")
-    fun getUserById(id: Int): User?;
+    fun getUserById(id: Int): User?
 
     /**
      * Inserts a user entity into the database
@@ -33,7 +33,7 @@ interface UserDao {
      * @param user the User entity to insert
      */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertUser(user: User);
+    fun insertUser(user: User)
 
     /**
      * Updates a user entity in the database
@@ -41,7 +41,7 @@ interface UserDao {
      * @param user the User entity to update
      */
     @Update
-    fun updateUser(user: User);
+    fun updateUser(user: User)
 
     /**
      * Deletes a user entity from the database
@@ -49,5 +49,5 @@ interface UserDao {
      * @param user the User entity to delete
      */
     @Delete
-    fun deleteUser(user: User);
+    fun deleteUser(user: User)
 }
