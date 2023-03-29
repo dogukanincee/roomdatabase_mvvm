@@ -45,7 +45,7 @@ class UserRepository(private val userDao: UserDao) {
     /**
      * Deletes the specified [user] from the database.
      */
-    suspend fun deleteUser(user: User) {
+    fun deleteUser(user: User) {
         Log.i(TAG, "Deleting user from database: $user")
         userDao.deleteUser(user)
     }
