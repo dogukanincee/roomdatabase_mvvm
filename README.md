@@ -1,6 +1,6 @@
 # Harnessing the Power of Room Database Library in Android Development
 
-https://dogukanincee.medium.com/harnessing-the-power-of-room-database-library-in-android-development-4f6b97befb49
+https://dogukanincee.medium.com/kotlin-cheatsheet-by-chatgpt-14af35e07e8a
 
 Managing and retrieving data is a key component of creating accurate and efficient applications as an Android developer. Use of a local database is one of the most well-liked and practical ways to accomplish this. With its simple abstraction layer over SQLite, the Room database library from the Android Jetpack libraries is a great option for managing databases in Android applications. Many Android apps depend on the ability to store and retrieve data.
 
